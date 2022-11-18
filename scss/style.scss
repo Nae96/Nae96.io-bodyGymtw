@@ -1,0 +1,24 @@
+@import "./utilities/variables";
+@import "./base/typo";
+@import "./utilities/mixins";
+@import "./base/reset";
+// @import "./layout/body";
+
+
+@import "./layout/header";
+@import "./layout/cardgiratoria";
+@import "./layout/conten-index";
+@import "./layout/membresia";
+
+
+
+@import "./layout/clases";
+@import "./layout/galeria";
+
+
+
+@import "./components/boostrap";
+
+@import "./layout/body";
+@import "./layout/footer";
+@import "./layout/media-footer";

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="enlace">
+                <img src="../assets/img/372.jpg" alt="" class="logo">
+            </a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="active, #" href="../index.html">Inicio</a></li>
+                <li><a class="#" href="./galeria.html">Galeria</a></li>
+                <li><a class="#" href="./membresia.html">Membresia</a></li>
+                <li><a class="#" href="./contactanos.html">Contactanos</a></li>
+                
+                
+            </ul>
+        </nav>
+    </header>
+   
+  
+    <main class="container-galeri">
+        <div class="box1">
+
+            <section id="galeria">
+                
+                    <div class="foto">
+                        <img class="img-hover" src="../assets/img/encabezado.jpg" alt="">
+                        <div class="oculto"><h4>clase1</h4></div>
+                    </div>
+            
+               
+                    <div class="foto">
+                        <img class="img-hover" src="../assets/img/yoga.jpg" alt="">
+                        <div class="oculto"><h4>clase2</h4></div>
+                    </div>
+            
+                    <div class="foto">
+                        <img class="img-hover" src="../assets/img/strong-man-training-in-gym.jpg" alt="">
+                        <div class="oculto"><h4>clase3</h4></div>
+                    </div>
+            
+               
+                    <div class="foto">
+                        <img class="img-hover" src="../assets/img/pexels-leon-ardho-1552242.jpg" alt="">
+                        <div class="oculto"><h4>clase4</h4></div>
+                    </div>
+            
+               
+                    <div class="foto">
+                        <img class="img-hover" src="../assets/img/cardio.jpg" alt="">
+                        <div class="oculto"><h4>clase5</h4></div>
+                    </div>
+            
+                
+                    <div class="foto">
+                        <img class="img-hover" src="../assets/img/pexels-pixabay-414029.jpg" alt="">
+                        <div class="oculto"><h4>clase6</h4></div>
+                    </div>
+            
+            </section>
+            
+        
+        
+        <!-- inserto jquery -->
+            <script
+          src="https://code.jquery.com/jquery-3.6.1.min.js"
+          integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+          crossorigin="anonymous"></script>
+        
+          <!-- codigo jquery -->
+          <script>
+               $(document).ready(function(){
+                $(".foto").hover(function() {
+                    $(this).find(".oculto").fadeIn();
+                    $(this).find(".img-hover").addClass("agrandar");
+                }, function(){
+                    $(this).find(".oculto").fadeOut();
+                    $(this).find(".img-hover").removeClass("agrandar");
+                })
+               })
+        
+          </script>
+        
+
+        </div>
+       
+       
+    </main>
+
+
+
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content-container">
+                <h3 class="website-logo">GYM</h3>
+                <span class="footer-info">111 111 111</span>
+                <span class="footer-info">gym@gmail.com</span>
+            </div>
+
+
+            <div class="footer-content-container">
+                <span class="menu-title">legal</span>
+                <a href="" class="menu-item-footer">privacy policy</a>
+                <a href="" class="menu-item-footer">cookies</a>
+                <a href="" class="menu-item-footer">terms & conditions</a>
+            </div>
+
+            
+          </div>
+
+            <div class="footer-content-container">
+                <span class="menu-title">follow us</span>
+                <div class="social-container">
+                <a href="https://es-la.facebook.com/" class="social-link"></a>
+                <a href="https://twitter.com/?lang=es" class="social-link"></a>
+                <a href="https://ar.linkedin.com/" class="social-link"></a>
+                </div>
+
+
+            </div>
+
+
+        </div>
+            
+
+
+    </footer>
+</body>
